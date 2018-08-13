@@ -12,8 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		if let vc = window?.rootViewController as? WeatherViewController {
 			let presenter = WeatherDataPresenter(output: vc)
-			let useCase = FetchWeatherUseCase(output: presenter)
-			vc.reloadData = useCase.fetch
+			let weatherFetcher = FetchWeatherUseCase(output: presenter)
+			vc.reloadData = weatherFetcher.fetch
 		}
 		
 		return true
