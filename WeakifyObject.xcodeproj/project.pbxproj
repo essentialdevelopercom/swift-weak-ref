@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0877D5CE21218EE2008448EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5CD21218EE2008448EF /* AppDelegate.swift */; };
-		0877D5D021218EE2008448EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5CF21218EE2008448EF /* ViewController.swift */; };
+		0877D5D021218EE2008448EF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5CF21218EE2008448EF /* WeatherViewController.swift */; };
 		0877D5D321218EE2008448EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0877D5D121218EE2008448EF /* Main.storyboard */; };
 		0877D5D521218EE3008448EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0877D5D421218EE3008448EF /* Assets.xcassets */; };
 		0877D5D821218EE3008448EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0877D5D621218EE3008448EF /* LaunchScreen.storyboard */; };
+		0877D5F221219B1D008448EF /* WeatherViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5F121219B1D008448EF /* WeatherViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +28,14 @@
 /* Begin PBXFileReference section */
 		0877D5CA21218EE2008448EF /* WeakifyObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakifyObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0877D5CD21218EE2008448EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0877D5CF21218EE2008448EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0877D5CF21218EE2008448EF /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0877D5D221218EE2008448EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0877D5D421218EE3008448EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0877D5D721218EE3008448EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0877D5D921218EE3008448EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0877D5DE21218EE3008448EF /* WeakifyObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakifyObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0877D5E421218EE3008448EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0877D5F121219B1D008448EF /* WeatherViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0877D5CD21218EE2008448EF /* AppDelegate.swift */,
-				0877D5CF21218EE2008448EF /* ViewController.swift */,
+				0877D5CF21218EE2008448EF /* WeatherViewController.swift */,
 				0877D5D121218EE2008448EF /* Main.storyboard */,
 				0877D5D421218EE3008448EF /* Assets.xcassets */,
 				0877D5D621218EE3008448EF /* LaunchScreen.storyboard */,
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				0877D5E421218EE3008448EF /* Info.plist */,
+				0877D5F121219B1D008448EF /* WeatherViewControllerTests.swift */,
 			);
 			path = WeakifyObjectTests;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 					};
 					0877D5DD21218EE3008448EF = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 0877D5C921218EE2008448EF;
 					};
 				};
@@ -194,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0877D5D021218EE2008448EF /* ViewController.swift in Sources */,
+				0877D5D021218EE2008448EF /* WeatherViewController.swift in Sources */,
 				0877D5CE21218EE2008448EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0877D5F221219B1D008448EF /* WeatherViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +396,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VRJ2W4578X;
 				INFOPLIST_FILE = WeakifyObjectTests/Info.plist;
@@ -401,6 +407,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialdeveloper.WeakifyObjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeakifyObject.app/WeakifyObject";
@@ -412,6 +419,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VRJ2W4578X;
 				INFOPLIST_FILE = WeakifyObjectTests/Info.plist;
