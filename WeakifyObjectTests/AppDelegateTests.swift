@@ -6,6 +6,7 @@ import XCTest
 @testable import WeakifyObject
 
 class AppDelegateTests: XCTestCase {
+	private weak var weakSUT: WeatherViewController?
 	private weak var weakVC: WeatherViewController?
 	
 	override func tearDown() {
@@ -16,16 +17,25 @@ class AppDelegateTests: XCTestCase {
 	
 	private func assertNoMemoryLeaks() {
 		XCTAssertNil(weakVC)
+		XCTAssertNil(weakSUT)
 	}
 	
-    func testDidFinishLaunchingConfiguresWeatherViewController() {
+	func testDidFinishLaunchingConfiguresWeatherViewController() {
 		let vc = makeWeatherViewController()
+		let sut = makeSUT(withRoot: vc)
+
+		XCTAssertNil(vc.reloadData)
 		
-        let sut = AppDelegate()
-		sut.window = UIWindow()
-		sut.window?.rootViewController = vc
+		_ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
 		
-		_ = sut.application(UIApplication.shared, didFinishLaunchingWithOptions: [:])
+		XCTAssertNotNil(vc.reloadData)
+	}
+	
+    func testWeatherViewControllerReloadDataShouldUpdateLabel() {
+		let vc = makeWeatherViewController()
+        let sut = makeSUT(withRoot: vc)
+		
+		_ = sut.application(.shared, didFinishLaunchingWithOptions: [:])
 		
 		let initialLabelValue = vc.label.text
 		
@@ -33,6 +43,15 @@ class AppDelegateTests: XCTestCase {
 		
 		XCTAssertNotEqual(vc.label.text, initialLabelValue)
     }
+	
+	// MARK: - Helpers
+	
+	private func makeSUT(withRoot vc: UIViewController) -> AppDelegate {
+		let sut = AppDelegate()
+		sut.window = UIWindow()
+		sut.window?.rootViewController = vc
+		return sut
+	}
 	
 	private func makeWeatherViewController() -> WeatherViewController {
 		let sb = UIStoryboard(name: "Main", bundle: nil)
