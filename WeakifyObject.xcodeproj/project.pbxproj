@@ -97,6 +97,33 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		082B82C82121C46E00F12E38 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0877D5CD21218EE2008448EF /* AppDelegate.swift */,
+				083FB28E2121C4AA006348B8 /* Supporting Files */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		083FB28E2121C4AA006348B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0877D5D421218EE3008448EF /* Assets.xcassets */,
+				0877D5D621218EE3008448EF /* LaunchScreen.storyboard */,
+				0877D5D921218EE3008448EF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		083FB28F2121C4BF006348B8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0877D5E421218EE3008448EF /* Info.plist */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		0877D5C121218EE2008448EF = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +148,7 @@
 				0877D5F82121BA05008448EF /* Business Logic */,
 				082B82C02121BDD600F12E38 /* Presentation */,
 				082B82C62121C3EA00F12E38 /* UI */,
-				0877D5CD21218EE2008448EF /* AppDelegate.swift */,
-				0877D5D421218EE3008448EF /* Assets.xcassets */,
-				0877D5D621218EE3008448EF /* LaunchScreen.storyboard */,
-				0877D5D921218EE3008448EF /* Info.plist */,
+				082B82C82121C46E00F12E38 /* Main */,
 			);
 			path = WeakifyObject;
 			sourceTree = "<group>";
@@ -135,7 +159,7 @@
 				0877D5FE2121BA89008448EF /* Business Logic */,
 				082B82C32121BE2200F12E38 /* Presentation */,
 				082B82C72121C41200F12E38 /* UI */,
-				0877D5E421218EE3008448EF /* Info.plist */,
+				083FB28F2121C4BF006348B8 /* Main */,
 			);
 			path = WeakifyObjectTests;
 			sourceTree = "<group>";
