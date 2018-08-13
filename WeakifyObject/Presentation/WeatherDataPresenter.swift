@@ -8,15 +8,15 @@ struct WeatherViewModel: Equatable {
 	let temperature: String
 }
 
-protocol WeatherPresenterOutput {
+protocol WeatherDataPresenterOutput {
 	func present(_ weather: WeatherViewModel)
 }
 
 final class WeatherDataPresenter: FetchWeatherOutput {
-	let output: WeatherPresenterOutput
+	let output: WeatherDataPresenterOutput
 	private let converter: MeasurementFormatter
 	
-	init(output: WeatherPresenterOutput, locale: Locale = .current) {
+	init(output: WeatherDataPresenterOutput, locale: Locale = .current) {
 		self.output = output
 		self.converter = MeasurementFormatter()
 		self.converter.locale = locale

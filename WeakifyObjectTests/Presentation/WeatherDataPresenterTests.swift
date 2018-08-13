@@ -40,7 +40,7 @@ class WeatherDataPresenterTests: XCTestCase {
 
 	// MARK: - Helpers
 	
-	private class OutputSpy: WeatherPresenterOutput {
+	private class OutputSpy: WeatherDataPresenterOutput {
 		typealias Message = (WeatherViewModel)
 		
 		var messages = [Message]()
