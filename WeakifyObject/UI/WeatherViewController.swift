@@ -19,3 +19,9 @@ class WeatherViewController: UIViewController {
 		reloadData()
 	}
 }
+
+extension WeatherViewController: WeatherPresenterOutput {
+	func present(_ weather: WeatherViewModel) {
+		label.text = weather.temperature
+	}
+}

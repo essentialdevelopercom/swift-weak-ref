@@ -51,6 +51,16 @@ class WeatherViewControllerTests: XCTestCase {
 		sut.viewWillAppear(false)
 		XCTAssertEqual(callCount, 2)
 	}
+	
+	// MARK: - WeatherPresenterOutput Tests
+	
+	func testPresentWeatherViewModelUpdatesLabel() {
+		let sut = makeSUT()
+		
+		sut.present(WeatherViewModel(temperature: "a temperature"))
+		
+		XCTAssertEqual(sut.label.text, "a temperature")
+	}
 
 	// MARK: - Helpers
 	
