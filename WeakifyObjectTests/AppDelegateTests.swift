@@ -6,13 +6,13 @@ import XCTest
 @testable import WeakifyObject
 
 class AppDelegateTests: XCTestCase {
-	private weak var weakSUT: WeatherViewController?
+	private weak var weakSUT: AppDelegate?
 	private weak var weakVC: WeatherViewController?
 	
 	override func tearDown() {
 		super.tearDown()
 		
-//		assertNoMemoryLeaks()
+		assertNoMemoryLeaks()
 	}
 	
 	private func assertNoMemoryLeaks() {
@@ -50,6 +50,7 @@ class AppDelegateTests: XCTestCase {
 		let sut = AppDelegate()
 		sut.window = UIWindow()
 		sut.window?.rootViewController = vc
+		self.weakSUT = sut
 		return sut
 	}
 	
