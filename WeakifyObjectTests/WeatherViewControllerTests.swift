@@ -37,6 +37,21 @@ class WeatherViewControllerTests: XCTestCase {
 		XCTAssertEqual(callCount, 2)
 	}
 	
+	func testViewWillAppearTriggersReloadDataClosure() {
+		let sut = makeSUT()
+		
+		var callCount = 0
+		sut.reloadData = { callCount += 1 }
+		
+		XCTAssertEqual(callCount, 0)
+		
+		sut.viewWillAppear(false)
+		XCTAssertEqual(callCount, 1)
+		
+		sut.viewWillAppear(false)
+		XCTAssertEqual(callCount, 2)
+	}
+
 	// MARK: - Helpers
 	
 	private func makeSUT() -> WeatherViewController {
