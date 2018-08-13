@@ -23,7 +23,7 @@ class FetchWeatherUseCaseTests: XCTestCase {
 	
 	// MARK: - Helpers
 
-	private class OutputSpy: FetchWeatherOutput {
+	private class OutputSpy: FetchWeatherUseCaseOutput {
 		typealias Message = (WeatherData)
 		
 		var messages = [Message]()

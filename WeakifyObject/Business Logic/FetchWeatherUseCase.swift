@@ -8,14 +8,14 @@ struct WeatherData: Hashable {
 	let temperature: Measurement<UnitTemperature>
 }
 
-protocol FetchWeatherOutput {
+protocol FetchWeatherUseCaseOutput {
 	func didFetch(_ weather: WeatherData)
 }
 
 final class FetchWeatherUseCase {
-	let output: FetchWeatherOutput
+	let output: FetchWeatherUseCaseOutput
 	
-	init(output: FetchWeatherOutput) {
+	init(output: FetchWeatherUseCaseOutput) {
 		self.output = output
 	}
 	

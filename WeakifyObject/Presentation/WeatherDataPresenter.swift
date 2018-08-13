@@ -12,7 +12,7 @@ protocol WeatherDataPresenterOutput {
 	func present(_ weather: WeatherViewModel)
 }
 
-final class WeatherDataPresenter: FetchWeatherOutput {
+final class WeatherDataPresenter: FetchWeatherUseCaseOutput {
 	let output: WeatherDataPresenterOutput
 	private let converter: MeasurementFormatter
 	
