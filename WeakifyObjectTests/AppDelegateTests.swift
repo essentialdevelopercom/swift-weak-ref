@@ -29,7 +29,7 @@ class AppDelegateTests: XCTestCase {
 		
 		let initialLabelValue = vc.label.text
 		
-		vc.reloadData()
+		vc.reloadData?()
 		
 		XCTAssertNotEqual(vc.label.text, initialLabelValue)
     }

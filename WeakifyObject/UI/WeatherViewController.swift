@@ -7,16 +7,16 @@ import UIKit
 class WeatherViewController: UIViewController {
 	@IBOutlet var label: UILabel!
 	@IBOutlet var reloadButton: UIButton!
-	var reloadData: () -> Void = {}
+	var reloadData: (() -> Void)?
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		reloadData()
+		reload()
 	}
 	
 	@IBAction private func reload() {
-		reloadData()
+		reloadData?()
 	}
 }
 
