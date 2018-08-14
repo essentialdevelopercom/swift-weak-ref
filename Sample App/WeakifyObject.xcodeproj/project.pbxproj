@@ -10,7 +10,6 @@
 		082B82C22121BDEF00F12E38 /* WeatherDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B82C12121BDEF00F12E38 /* WeatherDataPresenter.swift */; };
 		082B82C52121BE3D00F12E38 /* WeatherDataPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B82C42121BE3D00F12E38 /* WeatherDataPresenterTests.swift */; };
 		086F6DF12121C65500442CCB /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F6DF02121C65500442CCB /* AppDelegateTests.swift */; };
-		086F6DF32121E72F00442CCB /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F6DF22121E72F00442CCB /* WeakRef.swift */; };
 		086F6DF52121E74C00442CCB /* WeakRef+WeatherDataPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086F6DF42121E74C00442CCB /* WeakRef+WeatherDataPresenterOutput.swift */; };
 		0877D5CE21218EE2008448EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5CD21218EE2008448EF /* AppDelegate.swift */; };
 		0877D5D021218EE2008448EF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5CF21218EE2008448EF /* WeatherViewController.swift */; };
@@ -20,6 +19,8 @@
 		0877D5F221219B1D008448EF /* WeatherViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5F121219B1D008448EF /* WeatherViewControllerTests.swift */; };
 		0877D5FA2121BA33008448EF /* FetchWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5F92121BA33008448EF /* FetchWeatherUseCase.swift */; };
 		0877D6002121BA97008448EF /* FetchWeatherUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877D5FF2121BA97008448EF /* FetchWeatherUseCaseTests.swift */; };
+		08CD0F60212362B100D81726 /* WeakRef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD0F5F212362B100D81726 /* WeakRef.framework */; };
+		08CD0F61212362B100D81726 /* WeakRef.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08CD0F5F212362B100D81726 /* WeakRef.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,11 +33,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		089AD8312123621000875B8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08CD0F61212362B100D81726 /* WeakRef.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		082B82C12121BDEF00F12E38 /* WeatherDataPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataPresenter.swift; sourceTree = "<group>"; };
 		082B82C42121BE3D00F12E38 /* WeatherDataPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataPresenterTests.swift; sourceTree = "<group>"; };
 		086F6DF02121C65500442CCB /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
-		086F6DF22121E72F00442CCB /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
 		086F6DF42121E74C00442CCB /* WeakRef+WeatherDataPresenterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeakRef+WeatherDataPresenterOutput.swift"; sourceTree = "<group>"; };
 		0877D5CA21218EE2008448EF /* WeakifyObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakifyObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0877D5CD21218EE2008448EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +64,7 @@
 		0877D5F121219B1D008448EF /* WeatherViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerTests.swift; sourceTree = "<group>"; };
 		0877D5F92121BA33008448EF /* FetchWeatherUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWeatherUseCase.swift; sourceTree = "<group>"; };
 		0877D5FF2121BA97008448EF /* FetchWeatherUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherUseCaseTests.swift; sourceTree = "<group>"; };
+		08CD0F5F212362B100D81726 /* WeakRef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WeakRef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CD0F60212362B100D81726 /* WeakRef.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				0877D5CD21218EE2008448EF /* AppDelegate.swift */,
-				086F6DF22121E72F00442CCB /* WeakRef.swift */,
 				086F6DF42121E74C00442CCB /* WeakRef+WeatherDataPresenterOutput.swift */,
 				083FB28E2121C4AA006348B8 /* Supporting Files */,
 			);
@@ -139,6 +154,7 @@
 				0877D5CC21218EE2008448EF /* WeakifyObject */,
 				0877D5E121218EE3008448EF /* WeakifyObjectTests */,
 				0877D5CB21218EE2008448EF /* Products */,
+				08CD0F5F212362B100D81726 /* WeakRef.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +215,7 @@
 				0877D5C621218EE2008448EF /* Sources */,
 				0877D5C721218EE2008448EF /* Frameworks */,
 				0877D5C821218EE2008448EF /* Resources */,
+				089AD8312123621000875B8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,7 +310,6 @@
 			files = (
 				0877D5FA2121BA33008448EF /* FetchWeatherUseCase.swift in Sources */,
 				0877D5D021218EE2008448EF /* WeatherViewController.swift in Sources */,
-				086F6DF32121E72F00442CCB /* WeakRef.swift in Sources */,
 				0877D5CE21218EE2008448EF /* AppDelegate.swift in Sources */,
 				086F6DF52121E74C00442CCB /* WeakRef+WeatherDataPresenterOutput.swift in Sources */,
 				082B82C22121BDEF00F12E38 /* WeatherDataPresenter.swift in Sources */,

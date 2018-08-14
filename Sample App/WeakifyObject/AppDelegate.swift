@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import WeakRef
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

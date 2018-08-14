@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import WeakRef
 
 extension WeakRef: WeatherDataPresenterOutput where T: WeatherDataPresenterOutput {
 	func present(_ weather: WeatherViewModel) {
