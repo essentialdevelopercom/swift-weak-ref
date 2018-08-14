@@ -3,7 +3,7 @@
 //
 
 import XCTest
-@testable import WeakRef
+import WeakRef
 
 class WeakRefTests: XCTestCase {
 	
