@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "08F312FA212357510093D631"
-               BuildableName = "WeakRef_macOS.framework"
+               BuildableName = "WeakRef.framework"
                BlueprintName = "WeakRef_macOS"
                ReferencedContainer = "container:WeakRef.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08F312FA212357510093D631"
-            BuildableName = "WeakRef_macOS.framework"
+            BuildableName = "WeakRef.framework"
             BlueprintName = "WeakRef_macOS"
             ReferencedContainer = "container:WeakRef.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08F312FA212357510093D631"
-            BuildableName = "WeakRef_macOS.framework"
+            BuildableName = "WeakRef.framework"
             BlueprintName = "WeakRef_macOS"
             ReferencedContainer = "container:WeakRef.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "08F312FA212357510093D631"
-            BuildableName = "WeakRef_macOS.framework"
+            BuildableName = "WeakRef.framework"
             BlueprintName = "WeakRef_macOS"
             ReferencedContainer = "container:WeakRef.xcodeproj">
          </BuildableReference>
