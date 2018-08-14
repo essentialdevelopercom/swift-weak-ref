@@ -11,8 +11,6 @@
 		089AD81D21235A4400875B8F /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AD81B21235A4400875B8F /* WeakRef.swift */; };
 		08F312E6212356B60093D631 /* WeakRef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F312DC212356B60093D631 /* WeakRef.framework */; };
 		08F312EB212356B60093D631 /* WeakRefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F312EA212356B60093D631 /* WeakRefTests.swift */; };
-		08F312ED212356B60093D631 /* WeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F312DF212356B60093D631 /* WeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08F31303212358C20093D631 /* WeakRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F312DF212356B60093D631 /* WeakRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +26,6 @@
 /* Begin PBXFileReference section */
 		089AD81B21235A4400875B8F /* WeakRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
 		08F312DC212356B60093D631 /* WeakRef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeakRef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08F312DF212356B60093D631 /* WeakRef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakRef.h; sourceTree = "<group>"; };
 		08F312E0212356B60093D631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08F312E5212356B60093D631 /* WeakRefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakRefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F312EA212356B60093D631 /* WeakRefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefTests.swift; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		08F312DE212356B60093D631 /* WeakRef */ = {
 			isa = PBXGroup;
 			children = (
-				08F312DF212356B60093D631 /* WeakRef.h */,
 				089AD81B21235A4400875B8F /* WeakRef.swift */,
 				08F312E0212356B60093D631 /* Info.plist */,
 			);
@@ -107,7 +103,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F312ED212356B60093D631 /* WeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +110,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F31303212358C20093D631 /* WeakRef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
