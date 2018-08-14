@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "08F312E4212356B60093D631"
-               BuildableName = "WeakRefTests.xctest"
-               BlueprintName = "WeakRefTests"
+               BuildableName = "WeakRefTests_iOS.xctest"
+               BlueprintName = "WeakRefTests_iOS"
                ReferencedContainer = "container:WeakRef.xcodeproj">
             </BuildableReference>
          </TestableReference>

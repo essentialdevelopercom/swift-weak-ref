@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		089AD81C21235A4400875B8F /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AD81B21235A4400875B8F /* WeakRef.swift */; };
 		089AD81D21235A4400875B8F /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AD81B21235A4400875B8F /* WeakRef.swift */; };
+		089AD827212360C400875B8F /* WeakRef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F312FB212357510093D631 /* WeakRef.framework */; };
+		089AD82D2123617B00875B8F /* WeakRefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F312EA212356B60093D631 /* WeakRefTests.swift */; };
 		08F312E6212356B60093D631 /* WeakRef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F312DC212356B60093D631 /* WeakRef.framework */; };
 		08F312EB212356B60093D631 /* WeakRefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F312EA212356B60093D631 /* WeakRefTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		089AD828212360C400875B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F312D3212356B60093D631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F312FA212357510093D631;
+			remoteInfo = WeakRef_macOS;
+		};
 		08F312E7212356B60093D631 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08F312D3212356B60093D631 /* Project object */;
@@ -25,15 +34,24 @@
 
 /* Begin PBXFileReference section */
 		089AD81B21235A4400875B8F /* WeakRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		089AD822212360C400875B8F /* WeakRefTests_macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakRefTests_macOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F312DC212356B60093D631 /* WeakRef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeakRef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F312E0212356B60093D631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08F312E5212356B60093D631 /* WeakRefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakRefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F312E5212356B60093D631 /* WeakRefTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakRefTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F312EA212356B60093D631 /* WeakRefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefTests.swift; sourceTree = "<group>"; };
 		08F312EC212356B60093D631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08F312FB212357510093D631 /* WeakRef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeakRef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		089AD81F212360C400875B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089AD827212360C400875B8F /* WeakRef.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F312D8212356B60093D631 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				08F312DC212356B60093D631 /* WeakRef.framework */,
-				08F312E5212356B60093D631 /* WeakRefTests.xctest */,
+				08F312E5212356B60093D631 /* WeakRefTests_iOS.xctest */,
 				08F312FB212357510093D631 /* WeakRef.framework */,
+				089AD822212360C400875B8F /* WeakRefTests_macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +135,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		089AD821212360C400875B8F /* WeakRefTests_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089AD82A212360C400875B8F /* Build configuration list for PBXNativeTarget "WeakRefTests_macOS" */;
+			buildPhases = (
+				089AD81E212360C400875B8F /* Sources */,
+				089AD81F212360C400875B8F /* Frameworks */,
+				089AD820212360C400875B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				089AD829212360C400875B8F /* PBXTargetDependency */,
+			);
+			name = WeakRefTests_macOS;
+			productName = WeakRefTests_macOS;
+			productReference = 089AD822212360C400875B8F /* WeakRefTests_macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		08F312DB212356B60093D631 /* WeakRef_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08F312F0212356B60093D631 /* Build configuration list for PBXNativeTarget "WeakRef_iOS" */;
@@ -134,9 +171,9 @@
 			productReference = 08F312DC212356B60093D631 /* WeakRef.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		08F312E4212356B60093D631 /* WeakRefTests */ = {
+		08F312E4212356B60093D631 /* WeakRefTests_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08F312F3212356B60093D631 /* Build configuration list for PBXNativeTarget "WeakRefTests" */;
+			buildConfigurationList = 08F312F3212356B60093D631 /* Build configuration list for PBXNativeTarget "WeakRefTests_iOS" */;
 			buildPhases = (
 				08F312E1212356B60093D631 /* Sources */,
 				08F312E2212356B60093D631 /* Frameworks */,
@@ -147,9 +184,9 @@
 			dependencies = (
 				08F312E8212356B60093D631 /* PBXTargetDependency */,
 			);
-			name = WeakRefTests;
+			name = WeakRefTests_iOS;
 			productName = WeakRefTests;
-			productReference = 08F312E5212356B60093D631 /* WeakRefTests.xctest */;
+			productReference = 08F312E5212356B60093D631 /* WeakRefTests_iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		08F312FA212357510093D631 /* WeakRef_macOS */ = {
@@ -180,6 +217,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Essential Developer";
 				TargetAttributes = {
+					089AD821212360C400875B8F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					08F312DB212356B60093D631 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -206,13 +246,21 @@
 			projectRoot = "";
 			targets = (
 				08F312FA212357510093D631 /* WeakRef_macOS */,
+				089AD821212360C400875B8F /* WeakRefTests_macOS */,
 				08F312DB212356B60093D631 /* WeakRef_iOS */,
-				08F312E4212356B60093D631 /* WeakRefTests */,
+				08F312E4212356B60093D631 /* WeakRefTests_iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		089AD820212360C400875B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F312DA212356B60093D631 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +285,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		089AD81E212360C400875B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089AD82D2123617B00875B8F /* WeakRefTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08F312D7212356B60093D631 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +320,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		089AD829212360C400875B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08F312FA212357510093D631 /* WeakRef_macOS */;
+			targetProxy = 089AD828212360C400875B8F /* PBXContainerItemProxy */;
+		};
 		08F312E8212356B60093D631 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08F312DB212356B60093D631 /* WeakRef_iOS */;
@@ -272,6 +333,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		089AD82B212360C400875B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VRJ2W4578X;
+				INFOPLIST_FILE = WeakRefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.essentialdeveloper.WeakRefTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		089AD82C212360C400875B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VRJ2W4578X;
+				INFOPLIST_FILE = WeakRefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.essentialdeveloper.WeakRefTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		08F312EE212356B60093D631 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +652,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		089AD82A212360C400875B8F /* Build configuration list for PBXNativeTarget "WeakRefTests_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089AD82B212360C400875B8F /* Debug */,
+				089AD82C212360C400875B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		08F312D6212356B60093D631 /* Build configuration list for PBXProject "WeakRef" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -567,7 +679,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08F312F3212356B60093D631 /* Build configuration list for PBXNativeTarget "WeakRefTests" */ = {
+		08F312F3212356B60093D631 /* Build configuration list for PBXNativeTarget "WeakRefTests_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08F312F4212356B60093D631 /* Debug */,

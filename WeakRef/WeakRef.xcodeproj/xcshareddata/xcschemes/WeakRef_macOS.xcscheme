@@ -20,20 +20,6 @@
                ReferencedContainer = "container:WeakRef.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08F312E4212356B60093D631"
-               BuildableName = "WeakRefTests.xctest"
-               BlueprintName = "WeakRefTests"
-               ReferencedContainer = "container:WeakRef.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -47,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08F312E4212356B60093D631"
-               BuildableName = "WeakRefTests.xctest"
-               BlueprintName = "WeakRefTests"
+               BlueprintIdentifier = "089AD821212360C400875B8F"
+               BuildableName = "WeakRefTests_macOS.xctest"
+               BlueprintName = "WeakRefTests_macOS"
                ReferencedContainer = "container:WeakRef.xcodeproj">
             </BuildableReference>
          </TestableReference>
