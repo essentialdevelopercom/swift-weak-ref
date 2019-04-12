@@ -5,9 +5,25 @@
 import Foundation
 
 public final class WeakRef<T: AnyObject> {
-	public weak var object: T?
-	
-	public init(_ object: T) {
-		self.object = object
-	}
+    
+    private let queue = DispatchQueue(label: "ThreadSafeWeakRef.queue", attributes: .concurrent)
+    
+    private(set) weak var _object: T?
+    
+    weak var object: T? {
+        var result: T?
+        
+        queue.sync {
+            result = _object
+        }
+        
+        return result
+    }
+    
+    
+    init(object: T?) {
+        queue.async(flags: .barrier) {
+            self._object = object
+        }
+    }
 }
